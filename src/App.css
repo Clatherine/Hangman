@@ -1,0 +1,50 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .green{
+    background-color: green;
+  }
+  .red{
+    background-color: red;
+  }
+  
+  
+  .game {
+    margin: 20px;
+  }
+  
+  #main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-item{
+  min-width: 300px;
+  flex:1;
+  }
+  
+  #word{
+    margin: 50px;
+    font-size: 30px;
+  }
+  
+  #header{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  
+  
+  h1{
+    margin: 10px;
+  }
+  
+  #hangmanDiv{
+    text-align: right;
+    padding-right: 30px;
+  }
