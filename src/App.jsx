@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -45,7 +43,6 @@ lettersArr.forEach((letter) => {
 
 function Buttons({word, wordState, setWordState, hangmanState, setHangmanState}) {
 
-//   const [currentLetter, setCurrentLetter] = useState("");
 
   
   const alphabet = [
@@ -79,7 +76,6 @@ function Buttons({word, wordState, setWordState, hangmanState, setHangmanState})
 
   const handleClick = (event) => {
     if (hangmanState < 11) {
-    //   setCurrentLetter((currentLetter) => {
         if (word.includes(event.target.innerHTML)) {
           console.log("the letter is in the word!");
           event.target.classList.add("green");
@@ -108,9 +104,7 @@ function Buttons({word, wordState, setWordState, hangmanState, setHangmanState})
           });
         }
         event.target.disabled = true;
-        // return event.target.innerHTML;
       }
-    // );
     }
 
 
@@ -183,9 +177,11 @@ else if (event.target.innerHTML === "Fun") {
       </div>
       <div id="difficulty">
       <h4> Choose a difficulty level:</h4>
+      <div id="buttons">
       <button onClick={handleClick} className="game">Easy</button>
       <button onClick={handleClick}  className="game">Fun</button>
       <button onClick={handleClick}  className="game">Horribly tricky</button>
+      </div>
       </div>
     </section>
   );
