@@ -112,7 +112,7 @@ function Buttons({word, wordState, setWordState, hangmanState, setHangmanState})
     <section id="main">
     
       <div className="flex-item" id="buttonDiv">
-        <section id = "buttons">
+        <section id = "letterButtons">
         {alphabet.map((letter) => {
           return (
             <button className="letterbutton" onClick={handleClick} key={letter}>

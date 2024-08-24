@@ -11,11 +11,22 @@
   .red{
     background-color: red;
   }
-  
+ 
   
   #buttons {
     margin: 10px 10px 40px;
   }
+
+  #letterButtons {
+    margin: 10px
+  }
+  @media (max-width: 550px) {
+    .letterbutton {
+   padding: 4px;
+
+    }
+  }
+
 
   .game {
     margin: 10px
@@ -35,7 +46,7 @@
   }
   
   #word{
-    margin: 50px;
+    margin: 20px;
     font-size: 30px;
   }
   
