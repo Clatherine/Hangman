@@ -90,12 +90,9 @@ function Buttons({
   ];
 
   const handleClick = (event) => {
-    console.log(hangmanState, "hangmanstate");
-    console.log(inAction, 'inAction')
-    setInAction(true);
+   
     if (hangmanState < 11) {
       if (word.includes(event.target.innerHTML)) {
-        console.log("the letter is in the word!");
         event.target.classList.add("green");
         setWordState(() => {
           const updatedWordArr = [...wordState];
@@ -105,13 +102,11 @@ function Buttons({
             }
           }
           if (!updatedWordArr.includes("_")) {
-            console.log("word complete!");
             setHangmanState("winner");
           }
           return updatedWordArr;
         });
       } else {
-        console.log("the letter is not in the word!");
         event.target.classList.add("red");
         setHangmanState(() => {
           if (hangmanState < 11) {
